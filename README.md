@@ -4,7 +4,7 @@ Welcome to MinerGuard official repository.
 ## General info
 If this is the first time you enter this repo, make sure to visit our website: https://minerguard.pro
 
-If you are looking for documentation and tutorials, [have a look at the official documentation](https://minerguard.pro/docs)
+If you are looking for documentation and tutorials, [have a look at the official documentation](http://albertogeniola.github.io/MinerGuard)
 
 If you are looking for the latest release, just [click here](https://github.com/albertogeniola/MinerGuard/releases)
 
