@@ -1,10 +1,11 @@
-﻿# What is MinerGuard?
+﻿## What is MinerGuard?
+
 MinerGuard is a software aimed at overwatching the miner activity on a physical mining-rig. 
 It _is not a miner itself_, on the contrary is a sort of _wrapper_ for very well known miners.
 Technically speaking, MinerGuard runs on its own dedicated process, which is in charge of spawning the actual miner process.
 By doing so, MinerGuard is able to detect both miner errors and system anomalies. 
 
-## Features
+### Features
 However, MinerGuard does much more than that.
 A non-comprehensive list of supported features is the following:
 
@@ -17,7 +18,7 @@ A non-comprehensive list of supported features is the following:
 - Automatically set custom environment variables
 - External tools support, such as Overdrive
 
-### Feature requests
+#### Feature requests
 Authors are committed to listening to feature requests. 
 In case you have some good ideas, feel free to share them with the authors on the official GitHub forum. 
 Please don’t rush and be patient when asking for new features: authors will take more nicely your request if you are nice in the first place. 
@@ -43,7 +44,7 @@ Or, even better, use your wallet cli and donate directly to the following addres
 - ETH 0x3552ef0ddbbc603089d71db34861400f36823954</p>
 - XMR 48RTA2y8tkTdSdrmvgxNEvaFKTN5W1j5e6kfyR7uedtBiXuPHevWTENYWJY1883rScKmDJXPmpeVQX417rvjgvfRCoArZSx</p>
 
-## Miners compatility
+### Miners compatility
 At the time of writing, MinerGuard only supports XMR and its derivate coin miners.
 In particular, both Stak-XMR and Cast-XMR are supported. 
 Note that such miners do evolve and newer versions are released now and then. 

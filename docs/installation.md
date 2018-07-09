@@ -1,11 +1,11 @@
-﻿# Installation
+﻿## Installation
 MinerGuard is distributed via a managed installer program.
 The installer wizard will guide the user in the simple deployment process.
 The user might install MinerGuard on every miner-rig he/she wants to manage.
 The installation process is the same for every miner. 
 However, the user should customize the configuration setup of MinerGuard according to each miner-setup. 
 
-## Installation instructions
+### Installation instructions
 1. Download the latest version of MinerGuard [from here](https://github.com/albertogeniola/MinerGuard/releases)
 1. Run the installer with Administrative privileges
 1. Follow the installer wizard. If unsure, accepts the defaults.

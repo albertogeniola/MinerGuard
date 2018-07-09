@@ -1,4 +1,4 @@
-﻿# Configuring MinerGuard
+﻿## Configuring MinerGuard
 Once you start MinerGuard, you should receive an error complaining about missing or bad configuration. 
 _Don't warry_, that's normal. 
 
