@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Configuration - MinerGuard Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuration";
+    var mkdocs_page_input_path = "configuration.md";
+    var mkdocs_page_url = "/configuration/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MinerGuard Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tos/">Terms of use</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Configuration</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#configuring-minerguard">Configuring MinerGuard</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#general">General</a></li>
+        
+            <li><a class="toctree-l3" href="#error-handling">Error Handling</a></li>
+        
+            <li><a class="toctree-l3" href="#vga-settings">VGA Settings</a></li>
+        
+            <li><a class="toctree-l3" href="#amd-settings">AMD Settings</a></li>
+        
+            <li><a class="toctree-l3" href="#external-tools">External Tools</a></li>
+        
+            <li><a class="toctree-l3" href="#cast-xmr">Cast-XMR</a></li>
+        
+            <li><a class="toctree-l3" href="#stak-xmr">Stak-XMR</a></li>
+        
+            <li><a class="toctree-l3" href="#slack">Slack</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chatbot/">Slack and chatbot</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MinerGuard Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Configuration</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="configuring-minerguard">Configuring MinerGuard</h1>
+<p>Once you start MinerGuard, you should receive an error complaining about missing or bad configuration. 
+<em>Don't warry</em>, that's normal. </p>
+<blockquote>
+<p>Experts users might notice that the configuration file is in JSON format and is stored in the installation path.</p>
+</blockquote>
+<p>The recommanded way for handling MinerGuard configuration is to use the MinerGuard user interface. 
+From the <em>Configuration</em> menu, select <em>Edit</em>. 
+A new dialog will apper. 
+Each tab of the new window takes care of configuring a specific part of MinerGuard.
+So, let's have a look at each one.</p>
+<h3 id="general">General</h3>
+<p>This section contains the general configuration options that are valid for the miner-rig itself. </p>
+<p><img alt="General configuration screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/General-2.png" /></p>
+<p><strong>Miner identifier</strong>: 
+the name to assign to this miner. 
+In case you have multiple miners, be sure to assign each one a distinct (possibly meaninful) name. 
+Such id is used to uniquely identify the miner when issuing remote commands. </p>
+<p><strong>Autostart at windows boot</strong>: 
+when enabled, MinerGuard will automatically start at Windows boot. 
+Be advised: enabling this option requires you to set up an account with administrative rights that logs automatically on the system.
+The wizard procedure to do so will appear when you save the configuration.</p>
+<p><strong>Ensure windows update off</strong>: 
+when enabled, this option will make sure windows updates are switched off.
+This is particularly useful to make sure that the system does not update drivers on its own.
+Please note that this option will not prevent AMD/nVIDIA dirvers from automatically update.
+Please make sure drivers are set to avoid automatic updates.</p>
+<p><strong>Mining software</strong>:
+the mining software to be used. 
+You might chose one of the supported miners at a time. </p>
+<p><strong>Autostart mining</strong>:
+start mining as soon as MinerGuard is opened. 
+This option is particularly useful when also MinerGuard is configured to startup automatically at windows boot (i.e. <em>autostart at windows boot</em>)</p>
+<p><strong>Pool</strong>: 
+full address of mining pool to be used (including the port).
+The address should be in a form understandable to the chosen miner. 
+For instance, <em>pool.supportxmr.com:7777</em> is a valid entry for this input.</p>
+<p><strong>Wallet</strong>: 
+surely, the most important setting. 
+Put in here your full wallet address.</p>
+<p><strong>Password</strong>: 
+optional. If requested by the pool, put in here your password. </p>
+<p><strong>Environment Variables</strong>:
+specify in this table which are the environment variables to be set, before starting the miner.
+For instance, Stak-XMR used to require "GPU_MAX_ALLOC_PERCENT=100".
+To do so, just put <em>GPU_MAX_ALLOC_PERCENT</em> in the first column and <em>100</em> in the same row, on the second column.</p>
+<h3 id="error-handling">Error Handling</h3>
+<p>This section configures the automatic error-recovery policies that MinerGuard will apply in case of errors.</p>
+<p><img alt="Error handling screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Error-handling.png" /></p>
+<p><strong>Hashrate check interval</strong>: 
+how frequently MinerGuard will check the hashrate of the miner and will react in case the hashrate is less than the threshold.
+This value is expressed in seconds. 
+A value of 0 disables the hashrate check. 
+Don't put values too strict here: a value of 120 is good enough.</p>
+<p><strong>Minimum hashrate threshold</strong>: 
+the hashrate threshold under which the miner should be restarted. 
+This value really depends on your hardware. 
+A value of 0 disables the check.
+In case you have 1 Vega56 and you are mining with Cast-XMR and with blockchain drivers, you might consider 1500 as a good value.
+Don't put a value that is too close to your best hashrate, instead put something less: let's say that 300 H/s less per card is good threshold.</p>
+<p><strong>Max miner restarts per hour</strong>:
+how many times, at most, MinerGuard should try to restart the miner in case the hashrate drops of if there are errors in general.</p>
+<p><strong>What to do when maximum restart reached</strong>:
+what to do when the maximum number of miner restart is reached. </p>
+<blockquote>
+<p>Let's make a practical example here.
+Assume you specify a hashrate interval of 60, a minimum hashrate of 2000 and 3 as maximum number of restarts per hour.
+MinerGuard will calculate the hashrate average every minute of hashing. 
+If the hashrate drops under 2000 hashes per seconds, the MinerGuard will restart the miner.
+If this happens for more than 3 times in an hour, then the miner will <em>halt and wait</em>.</p>
+</blockquote>
+<h3 id="vga-settings">VGA Settings</h3>
+<p>The VGA section deals about generic features that apply to any graphic card installed to the system.
+Some VGA settings specific to their model/brand are instead available on the next sections.</p>
+<p><img alt="VGA Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/VGA-Settings.png" /></p>
+<p><strong>Auto reset VGAs</strong>:
+whether to reset certain graphics card before mining start/restart. 
+When this option is active, is applies only to graphic cards that match the Plug-n-play identifiers inputted in the bow below.</p>
+<p><strong>PNP IDS to reset</strong>:
+the device Plug-n-play IDs matching VGA cards to be reset before starting the mining software.
+MinerGuard will show all the PNP-Device ids for detected VGAs in the system on the main screen, bottom right corner. 
+However, you might retrieve the same info from <em>Windows Device Management</em> dialogs, looking at the ID-Hardware propertu from the driver details.</p>
+<blockquote>
+<p>You probably don't need to use this feature, unless you are using some unstable driver.
+For instance, people using BlockChain drivers with Vega devices, might really take advantage from this option.</p>
+</blockquote>
+<h3 id="amd-settings">AMD Settings</h3>
+<p>Here you find the configuration options specifically for AMD graphics adapters.</p>
+<p><img alt="AMD Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/AMD-Settings-1.png" /></p>
+<p><strong>Auto enable compute mode</strong>: 
+whether to ensure compute mode is switched on for all the AMD devices in the system.
+When this option is enabled (<em>default</em>), MinerGuard will ensure that the AMD driver is in compute mode.
+Please note that compute mode availability strictly depends on the driver version installed on the system.
+Compute mode is particularly effective for Radeon RX 400 and 500 series. 
+This option also affect Vega cards, enabling large page support.</p>
+<p><strong>Disable Crossfire</strong>:
+when enabled (<em>default</em>), MinerGuard will disable the Crossfire funcionality for all detected AMD cards.
+When mining, it is strongly suggested to disabled CF.</p>
+<p><strong>Disable ULPS</strong>:
+when checked (<em>default</em>), MinerGuard disables ULPS functionality for AMD cards. 
+Again, for best mining performance, ULPS should be disabled.</p>
+<p><strong>Ensure Driver Version</strong>:
+when true, MinerGuard checks if the driver version of the AMD devices matches one of the drivers listed below.
+If this does not happen, user is notified about the error.</p>
+<p><strong>Allowed Driver Versions</strong>:
+list of whitelisted driver versions to be checked by the "Ensure Driver Version" option.</p>
+<blockquote>
+<p>Two words about driver version enforcement.
+This option is useful when the system still has Windows Updates enabled.
+In fact, Windows might suddenly update the VGA cards driver without user's approval.
+If this check is enabled, MinerGuard will detect the different installed driver version and will notify the user about the anomaly.</p>
+</blockquote>
+<h3 id="external-tools">External Tools</h3>
+<p>In this section you will find the options to configure some external tools.</p>
+<p><img alt="External tool screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/external-tools-1.png" /></p>
+<p><strong>Use Overdriventool</strong>:
+whether to run Overdriventool before starting to mine. 
+Overdriventool is a software that enables P-states for AMD cards. 
+It is particularly useful when running VEGAs / RX500 cards without custom bios / Soft-Tables.</p>
+<p><strong>Overdriventool path</strong>:
+the location on the system where to find the Overdriventool executable.</p>
+<p><strong>Overdriventool command-line</strong>:
+arguments to pass to overdriventool software. </p>
+<p><strong>Abort on overdriventool failure</strong>:
+when this option is enabled, any error of Overdriventool will cause the miner to halt. 
+This might be ok if mining without optimized P-states is unprofitable. 
+However, if mining without P-States enabled is ok, you should not halt the miner if overdriventool fails.</p>
+<blockquote>
+<p>Please note that Overdriventool profiles file must reside next to the overdriventool executable, i.e. both of them must be in the same directory.</p>
+</blockquote>
+<h3 id="cast-xmr">Cast-XMR</h3>
+<p>This section shows configuration options for the Cast-XMR miner.</p>
+<p><img alt="Cast-XMR screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Cast-XMR-1.png" /></p>
+<p><strong>Additional command line</strong>:
+any specific command line option to pass to the miner. 
+Note that basic options such as pool-address, username, password are already automatically handled by MinerGuard itself.
+Usually, you don't need to specify anything in this field.</p>
+<p><strong>Cast XMR Path</strong>:
+full path to the Cast-XMR executable. </p>
+<p><strong>Daemon Port</strong>:
+port to pass to the miner for spawning the local viewonly http-server used to monitor its status and hashrate.
+Generally, port 7777 is a good option. 
+Please be sure to specify a valid port here, otherwise MinerGuard won't be able to monitor the miner hashrate.</p>
+<p><strong>Log file path</strong>:
+full path to the miner-log. 
+Useful for troubleshooting procedures in case the miner hangs and MinerGuard is unable to recover.</p>
+<h3 id="stak-xmr">Stak-XMR</h3>
+<p>This section shows configuration options for the Stak-XMR miner.</p>
+<p><img alt="Stak-XMR screenhost" src="https://minerguard.pro/wp-content/uploads/2018/07/Stak-XMR.png" /></p>
+<p><strong>Directory of XMR-Stak</strong>:
+path to the directory containing XMR-Stak executable and dll.</p>
+<p><strong>Disable CPU mining</strong>:
+when true, disables the mining option for the CPU. 
+This is usually advisable when the RIG is equipped with several graphic cards and CPU is left free.
+Anyways, since MinerGuard makes use of CPU, it's better to disable cpu mining if not strictly needed.</p>
+<p><strong>Disable AMD/NVIDIA mining</strong>:
+similarly to the previous option, when enabled, the gpu mining will be disabled.
+It is usually ok to leave both AMD and NVIDIA mining enabled. 
+However, if your rig is built with both AMD and nVIDIA cards and you wish to use only AMD cards you can disable the NVIDIA GPU for mining (or vice versa).</p>
+<p><strong>Daemon Port</strong>:
+port to pass to the miner for spawning the local viewonly http-server used to monitor its status and hashrate.
+Generally, port 7777 is a good option. 
+Please be sure to specify a valid port here, otherwise MinerGuard won't be able to monitor the miner hashrate.</p>
+<p><strong>Log file</strong>:
+full path to the miner-log. 
+Useful for troubleshooting procedures in case the miner hangs and MinerGuard is unable to recover.</p>
+<p><strong>Cryptocurrency to mine</strong>:
+which version of the cryupto-currency to mine. </p>
+<h3 id="slack">Slack</h3>
+<p>This part of the MinerGuard configuration is dedicated at the notification system.
+At the moment, the only supported one is Slack. 
+Before configuring Slack, you should read the <strong>Slack and Chatbots section</strong>.</p>
+<p>The very first step is to register to Slack website. 
+To do so, visit https://slack.com/get-started and select <em>create a new workspace</em>.
+Complete the registration procedure (don't forget to verify your email account), and make sure to remeber both your workspace name and registration email address.</p>
+<p><img alt="Slack screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/slack.png" /></p>
+<p>Once you got access to the slack workpspace, get back to the Slack configuration tab and click on <em>Get-Token</em> button.</p>
+<p><img alt="Slack screenshot 1" src="https://minerguard.pro/wp-content/uploads/2018/07/slack2.png" /></p>
+<p>A new form will appear. 
+There, you should click on <em>Add to Slack</em>. 
+This operation will open the default browser on the system, poiting to Slack permission consent dialog.</p>
+<p><img alt="Slack consent screen screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Slack3.png" /></p>
+<p>From the Slack authorization page, click on <em>Authorize</em>.
+If everything goes well, the browser will tell you that the operation has been completed and that you can now close the window.
+If that happens, it also means that the SlackAccessToken field has been populated with the appropriate value. Therefore, <em>congrats, you made it!</em></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../chatbot/" class="btn btn-neutral float-right" title="Slack and chatbot">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../chatbot/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
