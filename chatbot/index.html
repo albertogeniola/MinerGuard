@@ -129,7 +129,7 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿# Slack and ChatBots commands
+                <p>﻿## Slack and ChatBots commands
 Slack is a collaboration framework, which is free for a number of basic use-cases, which include the ones that we will be using.
 In two words, Slack is a messaging system, based on projects.
 An user can join one or more projects. 
@@ -140,22 +140,22 @@ A chatbot is an automated system that talks to the user, in a human-like way.</p
 In our case, we will use Slack for creating a project and register a chatbot for each rig we are using.
 Imagine: each rig that is managed by MinerGuard will join the Slack channel "all-miners". 
 Then, you can talk to each of them, addressing each miner with the <strong>identifier</strong> specified in the <em>general configuration tab</em>.</p>
-<h2 id="chatbot-commands">Chatbot commands</h2>
+<h3 id="chatbot-commands">Chatbot commands</h3>
 <p>There are two different types of commands you can issue to the SlackChat: 
 - Single-Miner command
 - All-Miners command</p>
 <p>As you can imagine, <em>single-miner</em> commands are referred to a single miner, while <em>all-miners</em> commands are impacting on all miners.
 Being directed to a specific miner, every <em>single-miner</em> command also requires the miner-id to talk to. 
 On the contrary, <em>all-miners</em> commands do not need that, because the command will be sent over all the registered miners.</p>
-<h3 id="single-miner-commands">Single-Miner commands</h3>
-<h4 id="getting-the-status-of-a-specific-miner">Getting the status of a specific miner.</h4>
+<h4 id="single-miner-commands">Single-Miner commands</h4>
+<h5 id="getting-the-status-of-a-specific-miner">Getting the status of a specific miner.</h5>
 <p>It also provides its current hashrate.</p>
 <pre><code>Status of &lt;MINER-ID&gt;
 </code></pre>
 <p>or</p>
 <pre><code>What's &lt;Miner-ID&gt; status?
 </code></pre>
-<h4 id="startingstopping-miners">Starting/Stopping miners</h4>
+<h5 id="startingstopping-miners">Starting/Stopping miners</h5>
 <pre><code>Start &lt;MINER-ID&gt;
 </code></pre>
 <p>or</p>
@@ -167,14 +167,14 @@ On the contrary, <em>all-miners</em> commands do not need that, because the comm
 <p>You might also restart mining in a single command:</p>
 <pre><code>Restart &lt;MINER-ID&gt;
 </code></pre>
-<h4 id="remote-control">Remote control</h4>
+<h5 id="remote-control">Remote control</h5>
 <p>Interestingly, you can request the miner to start an instance of TeamViewer and to tell you the login credentials to remote access the machine:</p>
 <pre><code>Control &lt;MINER-ID&gt;
 </code></pre>
 <p>or</p>
 <pre><code>Let me remote control &lt;MINER-ID&gt;
 </code></pre>
-<h3 id="all-miners-commands">All-Miners commands</h3>
+<h4 id="all-miners-commands">All-Miners commands</h4>
 <p>At the moment, the only supported commands that impacts on all miners are "hello" and "status" commands.
 The <em>hello</em> command will make all the miners respond with their IDs, so that the user will know how many of them are online and what are their names.</p>
 <pre><code>Hello!
@@ -182,7 +182,7 @@ The <em>hello</em> command will make all the miners respond with their IDs, so t
 <p>The <em>status</em> command will do quite the same, but miners will also report their current status and hashrate (so the output on the chat will be more verbose)</p>
 <pre><code>Info
 </code></pre>
-<h3 id="future-improvements">Future improvements</h3>
+<h4 id="future-improvements">Future improvements</h4>
 <p>Since Slack and chatbots are very nice technologies that simplify asset management, authros will further improve the chatbot so that it can uderstand many more commands.
 If you have any idea or requirements, you <a href="https://github.com/albertogeniola/minerguard/issues">should post open a feature request</a>.</p>
               
