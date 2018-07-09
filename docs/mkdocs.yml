@@ -1,0 +1,9 @@
+site_name: MinerGuard Docs
+
+pages:
+    - Home: index.md
+    - Terms of use: tos.md
+    - Installation: installation.md
+    - Configuration: configuration.md
+    - Slack and chatbot: chatbot.md
+theme: readthedocs
