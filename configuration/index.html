@@ -3,28 +3,31 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
   <title>Configuration - MinerGuard Docs</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+
   
   <script>
     // Current page data
     var mkdocs_page_name = "Configuration";
-    var mkdocs_page_input_path = "configuration.md";
-    var mkdocs_page_url = "/configuration/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
   
 </head>
 
@@ -44,59 +47,70 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+        <ul class="current">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../tos/">Terms of use</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../tos/">Terms of use</a>
+        
+    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../installation/">Installation</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../installation/">Installation</a>
+        
+    </li>
+<li>
           
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">Configuration</a>
-    <ul class="subnav">
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Configuration</a>
+        
+            <ul>
             
-    <li class="toctree-l2"><a href="#configuring-minerguard">Configuring MinerGuard</a></li>
-    
-        <ul>
+                <li class="toctree-l3"><a href="#general">General</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#error-handling">Error Handling</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#vga-settings">VGA Settings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#amd-settings">AMD Settings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#external-tools">External Tools</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#cast-xmr">Cast-XMR</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#stak-xmr">Stak-XMR</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#slack">Slack</a></li>
+                
+            
+            </ul>
         
-            <li><a class="toctree-l3" href="#general">General</a></li>
-        
-            <li><a class="toctree-l3" href="#error-handling">Error Handling</a></li>
-        
-            <li><a class="toctree-l3" href="#vga-settings">VGA Settings</a></li>
-        
-            <li><a class="toctree-l3" href="#amd-settings">AMD Settings</a></li>
-        
-            <li><a class="toctree-l3" href="#external-tools">External Tools</a></li>
-        
-            <li><a class="toctree-l3" href="#cast-xmr">Cast-XMR</a></li>
-        
-            <li><a class="toctree-l3" href="#stak-xmr">Stak-XMR</a></li>
-        
-            <li><a class="toctree-l3" href="#slack">Slack</a></li>
-        
-        </ul>
-    
-
-    </ul>
-	    </li>
+    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../chatbot/">Slack and chatbot</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../chatbot/">Slack and chatbot</a>
+        
+    </li>
+<li>
           
         </ul>
       </div>
@@ -130,8 +144,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="configuring-minerguard">Configuring MinerGuard</h1>
-<p>Once you start MinerGuard, you should receive an error complaining about missing or bad configuration. 
+                <p>﻿# Configuring MinerGuard
+Once you start MinerGuard, you should receive an error complaining about missing or bad configuration. 
 <em>Don't warry</em>, that's normal. </p>
 <blockquote>
 <p>Experts users might notice that the configuration file is in JSON format and is stored in the installation path.</p>
@@ -322,7 +336,7 @@ If that happens, it also means that the SlackAccessToken field has been populate
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../chatbot/" class="btn btn-neutral float-right" title="Slack and chatbot">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../chatbot/" class="btn btn-neutral float-right" title="Slack and chatbot"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -339,7 +353,7 @@ If that happens, it also means that the SlackAccessToken field has been populate
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+	  
         </div>
       </div>
 
@@ -347,7 +361,7 @@ If that happens, it also means that the SlackAccessToken field has been populate
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+<div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -358,10 +372,6 @@ If that happens, it also means that the SlackAccessToken field has been populate
       
     </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/require.js"></script>
-      <script src="../search/search.js"></script>
 
 </body>
 </html>
