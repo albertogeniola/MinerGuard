@@ -144,7 +144,7 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿## Configuring MinerGuard
+                <p>﻿# Configuring MinerGuard
 Once you start MinerGuard, you should receive an error complaining about missing or bad configuration. 
 <em>Don't warry</em>, that's normal. </p>
 <blockquote>
@@ -155,7 +155,7 @@ From the <em>Configuration</em> menu, select <em>Edit</em>.
 A new dialog will apper. 
 Each tab of the new window takes care of configuring a specific part of MinerGuard.
 So, let's have a look at each one.</p>
-<h3 id="general">General</h3>
+<h2 id="general">General</h2>
 <p>This section contains the general configuration options that are valid for the miner-rig itself. </p>
 <p><img alt="General configuration screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/General-2.png" /></p>
 <p><strong>Miner identifier</strong>: 
@@ -190,7 +190,7 @@ optional. If requested by the pool, put in here your password. </p>
 specify in this table which are the environment variables to be set, before starting the miner.
 For instance, Stak-XMR used to require "GPU_MAX_ALLOC_PERCENT=100".
 To do so, just put <em>GPU_MAX_ALLOC_PERCENT</em> in the first column and <em>100</em> in the same row, on the second column.</p>
-<h3 id="error-handling">Error Handling</h3>
+<h2 id="error-handling">Error Handling</h2>
 <p>This section configures the automatic error-recovery policies that MinerGuard will apply in case of errors.</p>
 <p><img alt="Error handling screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Error-handling.png" /></p>
 <p><strong>Hashrate check interval</strong>: 
@@ -215,7 +215,7 @@ MinerGuard will calculate the hashrate average every minute of hashing.
 If the hashrate drops under 2000 hashes per seconds, the MinerGuard will restart the miner.
 If this happens for more than 3 times in an hour, then the miner will <em>halt and wait</em>.</p>
 </blockquote>
-<h3 id="vga-settings">VGA Settings</h3>
+<h2 id="vga-settings">VGA Settings</h2>
 <p>The VGA section deals about generic features that apply to any graphic card installed to the system.
 Some VGA settings specific to their model/brand are instead available on the next sections.</p>
 <p><img alt="VGA Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/VGA-Settings.png" /></p>
@@ -230,7 +230,7 @@ However, you might retrieve the same info from <em>Windows Device Management</em
 <p>You probably don't need to use this feature, unless you are using some unstable driver.
 For instance, people using BlockChain drivers with Vega devices, might really take advantage from this option.</p>
 </blockquote>
-<h3 id="amd-settings">AMD Settings</h3>
+<h2 id="amd-settings">AMD Settings</h2>
 <p>Here you find the configuration options specifically for AMD graphics adapters.</p>
 <p><img alt="AMD Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/AMD-Settings-1.png" /></p>
 <p><strong>Auto enable compute mode</strong>: 
@@ -256,7 +256,7 @@ This option is useful when the system still has Windows Updates enabled.
 In fact, Windows might suddenly update the VGA cards driver without user's approval.
 If this check is enabled, MinerGuard will detect the different installed driver version and will notify the user about the anomaly.</p>
 </blockquote>
-<h3 id="external-tools">External Tools</h3>
+<h2 id="external-tools">External Tools</h2>
 <p>In this section you will find the options to configure some external tools.</p>
 <p><img alt="External tool screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/external-tools-1.png" /></p>
 <p><strong>Use Overdriventool</strong>:
@@ -274,7 +274,7 @@ However, if mining without P-States enabled is ok, you should not halt the miner
 <blockquote>
 <p>Please note that Overdriventool profiles file must reside next to the overdriventool executable, i.e. both of them must be in the same directory.</p>
 </blockquote>
-<h3 id="cast-xmr">Cast-XMR</h3>
+<h2 id="cast-xmr">Cast-XMR</h2>
 <p>This section shows configuration options for the Cast-XMR miner.</p>
 <p><img alt="Cast-XMR screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Cast-XMR-1.png" /></p>
 <p><strong>Additional command line</strong>:
@@ -290,7 +290,7 @@ Please be sure to specify a valid port here, otherwise MinerGuard won't be able 
 <p><strong>Log file path</strong>:
 full path to the miner-log. 
 Useful for troubleshooting procedures in case the miner hangs and MinerGuard is unable to recover.</p>
-<h3 id="stak-xmr">Stak-XMR</h3>
+<h2 id="stak-xmr">Stak-XMR</h2>
 <p>This section shows configuration options for the Stak-XMR miner.</p>
 <p><img alt="Stak-XMR screenhost" src="https://minerguard.pro/wp-content/uploads/2018/07/Stak-XMR.png" /></p>
 <p><strong>Directory of XMR-Stak</strong>:
@@ -312,7 +312,7 @@ full path to the miner-log.
 Useful for troubleshooting procedures in case the miner hangs and MinerGuard is unable to recover.</p>
 <p><strong>Cryptocurrency to mine</strong>:
 which version of the cryupto-currency to mine. </p>
-<h3 id="slack">Slack</h3>
+<h2 id="slack">Slack</h2>
 <p>This part of the MinerGuard configuration is dedicated at the notification system.
 At the moment, the only supported one is Slack. 
 Before configuring Slack, you should read the <strong>Slack and Chatbots section</strong>.</p>
