@@ -3,31 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Configuration - MinerGuard Docs</title>
   
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Configuration - MinerGuard Docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-
   
   <script>
     // Current page data
     var mkdocs_page_name = "Configuration";
+    var mkdocs_page_input_path = "configuration.md";
+    var mkdocs_page_url = "/configuration/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -47,70 +44,59 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../tos/">Terms of use</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../tos/">Terms of use</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../installation/">Installation</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation/">Installation</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Configuration</a>
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Configuration</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#configuring-minerguard">Configuring MinerGuard</a></li>
+    
+        <ul>
         
-            <ul>
-            
-                <li class="toctree-l3"><a href="#general">General</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#error-handling">Error Handling</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#vga-settings">VGA Settings</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#amd-settings">AMD Settings</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#external-tools">External Tools</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#cast-xmr">Cast-XMR</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#stak-xmr">Stak-XMR</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#slack">Slack</a></li>
-                
-            
-            </ul>
+            <li><a class="toctree-l3" href="#general">General</a></li>
         
-    </li>
-<li>
+            <li><a class="toctree-l3" href="#error-handling">Error Handling</a></li>
+        
+            <li><a class="toctree-l3" href="#vga-settings">VGA Settings</a></li>
+        
+            <li><a class="toctree-l3" href="#amd-settings">AMD Settings</a></li>
+        
+            <li><a class="toctree-l3" href="#external-tools">External Tools</a></li>
+        
+            <li><a class="toctree-l3" href="#cast-xmr">Cast-XMR</a></li>
+        
+            <li><a class="toctree-l3" href="#stak-xmr">Stak-XMR</a></li>
+        
+            <li><a class="toctree-l3" href="#slack">Slack</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../chatbot/">Slack and chatbot</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../chatbot/">Slack and chatbot</a>
+	    </li>
           
         </ul>
       </div>
@@ -144,8 +130,8 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿# Configuring MinerGuard
-Once you start MinerGuard, you should receive an error complaining about missing or bad configuration. 
+                <h2 id="configuring-minerguard">Configuring MinerGuard</h2>
+<p>Once you start MinerGuard, you should receive an error complaining about missing or bad configuration. 
 <em>Don't warry</em>, that's normal. </p>
 <blockquote>
 <p>Experts users might notice that the configuration file is in JSON format and is stored in the installation path.</p>
@@ -155,7 +141,7 @@ From the <em>Configuration</em> menu, select <em>Edit</em>.
 A new dialog will apper. 
 Each tab of the new window takes care of configuring a specific part of MinerGuard.
 So, let's have a look at each one.</p>
-<h2 id="general">General</h2>
+<h3 id="general">General</h3>
 <p>This section contains the general configuration options that are valid for the miner-rig itself. </p>
 <p><img alt="General configuration screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/General-2.png" /></p>
 <p><strong>Miner identifier</strong>: 
@@ -190,7 +176,7 @@ optional. If requested by the pool, put in here your password. </p>
 specify in this table which are the environment variables to be set, before starting the miner.
 For instance, Stak-XMR used to require "GPU_MAX_ALLOC_PERCENT=100".
 To do so, just put <em>GPU_MAX_ALLOC_PERCENT</em> in the first column and <em>100</em> in the same row, on the second column.</p>
-<h2 id="error-handling">Error Handling</h2>
+<h3 id="error-handling">Error Handling</h3>
 <p>This section configures the automatic error-recovery policies that MinerGuard will apply in case of errors.</p>
 <p><img alt="Error handling screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Error-handling.png" /></p>
 <p><strong>Hashrate check interval</strong>: 
@@ -215,7 +201,7 @@ MinerGuard will calculate the hashrate average every minute of hashing.
 If the hashrate drops under 2000 hashes per seconds, the MinerGuard will restart the miner.
 If this happens for more than 3 times in an hour, then the miner will <em>halt and wait</em>.</p>
 </blockquote>
-<h2 id="vga-settings">VGA Settings</h2>
+<h3 id="vga-settings">VGA Settings</h3>
 <p>The VGA section deals about generic features that apply to any graphic card installed to the system.
 Some VGA settings specific to their model/brand are instead available on the next sections.</p>
 <p><img alt="VGA Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/VGA-Settings.png" /></p>
@@ -230,7 +216,7 @@ However, you might retrieve the same info from <em>Windows Device Management</em
 <p>You probably don't need to use this feature, unless you are using some unstable driver.
 For instance, people using BlockChain drivers with Vega devices, might really take advantage from this option.</p>
 </blockquote>
-<h2 id="amd-settings">AMD Settings</h2>
+<h3 id="amd-settings">AMD Settings</h3>
 <p>Here you find the configuration options specifically for AMD graphics adapters.</p>
 <p><img alt="AMD Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/AMD-Settings-1.png" /></p>
 <p><strong>Auto enable compute mode</strong>: 
@@ -256,7 +242,7 @@ This option is useful when the system still has Windows Updates enabled.
 In fact, Windows might suddenly update the VGA cards driver without user's approval.
 If this check is enabled, MinerGuard will detect the different installed driver version and will notify the user about the anomaly.</p>
 </blockquote>
-<h2 id="external-tools">External Tools</h2>
+<h3 id="external-tools">External Tools</h3>
 <p>In this section you will find the options to configure some external tools.</p>
 <p><img alt="External tool screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/external-tools-1.png" /></p>
 <p><strong>Use Overdriventool</strong>:
@@ -274,7 +260,7 @@ However, if mining without P-States enabled is ok, you should not halt the miner
 <blockquote>
 <p>Please note that Overdriventool profiles file must reside next to the overdriventool executable, i.e. both of them must be in the same directory.</p>
 </blockquote>
-<h2 id="cast-xmr">Cast-XMR</h2>
+<h3 id="cast-xmr">Cast-XMR</h3>
 <p>This section shows configuration options for the Cast-XMR miner.</p>
 <p><img alt="Cast-XMR screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Cast-XMR-1.png" /></p>
 <p><strong>Additional command line</strong>:
@@ -290,7 +276,7 @@ Please be sure to specify a valid port here, otherwise MinerGuard won't be able 
 <p><strong>Log file path</strong>:
 full path to the miner-log. 
 Useful for troubleshooting procedures in case the miner hangs and MinerGuard is unable to recover.</p>
-<h2 id="stak-xmr">Stak-XMR</h2>
+<h3 id="stak-xmr">Stak-XMR</h3>
 <p>This section shows configuration options for the Stak-XMR miner.</p>
 <p><img alt="Stak-XMR screenhost" src="https://minerguard.pro/wp-content/uploads/2018/07/Stak-XMR.png" /></p>
 <p><strong>Directory of XMR-Stak</strong>:
@@ -312,7 +298,7 @@ full path to the miner-log.
 Useful for troubleshooting procedures in case the miner hangs and MinerGuard is unable to recover.</p>
 <p><strong>Cryptocurrency to mine</strong>:
 which version of the cryupto-currency to mine. </p>
-<h2 id="slack">Slack</h2>
+<h3 id="slack">Slack</h3>
 <p>This part of the MinerGuard configuration is dedicated at the notification system.
 At the moment, the only supported one is Slack. 
 Before configuring Slack, you should read the <strong>Slack and Chatbots section</strong>.</p>
@@ -336,7 +322,7 @@ If that happens, it also means that the SlackAccessToken field has been populate
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../chatbot/" class="btn btn-neutral float-right" title="Slack and chatbot"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../chatbot/" class="btn btn-neutral float-right" title="Slack and chatbot">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -353,7 +339,7 @@ If that happens, it also means that the SlackAccessToken field has been populate
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
@@ -361,7 +347,7 @@ If that happens, it also means that the SlackAccessToken field has been populate
 
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -372,6 +358,10 @@ If that happens, it also means that the SlackAccessToken field has been populate
       
     </span>
 </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
 
 </body>
 </html>
