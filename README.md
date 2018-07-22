@@ -1,6 +1,12 @@
 ﻿# MinerGuard doc
 Welcome to MinerGuard official repository.
 
+## First release is available!
+![First release available](http://www.iconarchive.com/download/i107741/google/noto-emoji-activities/52707-party-popper.ico)
+
+After sleepless nights and weekends, the very first version of MinerGuard has been finally released! Don't hesitate, give it a chance!
+Setup [available here](https://www.github.com/albertogeniola/minerguard/releases).
+
 ## General info
 If this is the first time you enter this repo, make sure to visit our website: https://minerguard.pro
 
