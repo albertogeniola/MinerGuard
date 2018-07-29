@@ -143,7 +143,7 @@ Each tab of the new window takes care of configuring a specific part of MinerGua
 So, let's have a look at each one.</p>
 <h3 id="general">General</h3>
 <p>This section contains the general configuration options that are valid for the miner-rig itself. </p>
-<p><img alt="General configuration screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/General-2.png" /></p>
+<p><img alt="General configuration screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/general.png" /></p>
 <p><strong>Miner identifier</strong>: 
 the name to assign to this miner. 
 In case you have multiple miners, be sure to assign each one a distinct (possibly meaninful) name. 
@@ -152,7 +152,7 @@ Such id is used to uniquely identify the miner when issuing remote commands. </p
 when enabled, MinerGuard will automatically start at Windows boot. 
 Be advised: enabling this option requires you to set up an account with administrative rights that logs automatically on the system.
 The wizard procedure to do so will appear when you save the configuration.</p>
-<p><strong>Ensure windows update off</strong>: 
+<p><strong>Ensure Windows update off</strong>: 
 when enabled, this option will make sure windows updates are switched off.
 This is particularly useful to make sure that the system does not update drivers on its own.
 Please note that this option will not prevent AMD/nVIDIA dirvers from automatically update.
@@ -178,7 +178,7 @@ For instance, Stak-XMR used to require "GPU_MAX_ALLOC_PERCENT=100".
 To do so, just put <em>GPU_MAX_ALLOC_PERCENT</em> in the first column and <em>100</em> in the same row, on the second column.</p>
 <h3 id="error-handling">Error Handling</h3>
 <p>This section configures the automatic error-recovery policies that MinerGuard will apply in case of errors.</p>
-<p><img alt="Error handling screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Error-handling.png" /></p>
+<p><img alt="Error handling screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/error_handling.png" /></p>
 <p><strong>Hashrate check interval</strong>: 
 how frequently MinerGuard will check the hashrate of the miner and will react in case the hashrate is less than the threshold.
 This value is expressed in seconds. 
@@ -204,21 +204,20 @@ If this happens for more than 3 times in an hour, then the miner will <em>halt a
 <h3 id="vga-settings">VGA Settings</h3>
 <p>The VGA section deals about generic features that apply to any graphic card installed to the system.
 Some VGA settings specific to their model/brand are instead available on the next sections.</p>
-<p><img alt="VGA Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/VGA-Settings.png" /></p>
+<p><img alt="VGA Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/vga_settings.png" /></p>
 <p><strong>Auto reset VGAs</strong>:
 whether to reset certain graphics card before mining start/restart. 
 When this option is active, is applies only to graphic cards that match the Plug-n-play identifiers inputted in the bow below.</p>
 <p><strong>PNP IDS to reset</strong>:
 the device Plug-n-play IDs matching VGA cards to be reset before starting the mining software.
-MinerGuard will show all the PNP-Device ids for detected VGAs in the system on the main screen, bottom right corner. 
-However, you might retrieve the same info from <em>Windows Device Management</em> dialogs, looking at the ID-Hardware propertu from the driver details.</p>
+To add a card type to the list of cards to be automatically restarted, just double click on the corresponding VGA from the list below.</p>
 <blockquote>
 <p>You probably don't need to use this feature, unless you are using some unstable driver.
 For instance, people using BlockChain drivers with Vega devices, might really take advantage from this option.</p>
 </blockquote>
 <h3 id="amd-settings">AMD Settings</h3>
 <p>Here you find the configuration options specifically for AMD graphics adapters.</p>
-<p><img alt="AMD Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/AMD-Settings-1.png" /></p>
+<p><img alt="AMD Settings" src="https://minerguard.pro/wp-content/uploads/2018/07/vga_settings.png" /></p>
 <p><strong>Auto enable compute mode</strong>: 
 whether to ensure compute mode is switched on for all the AMD devices in the system.
 When this option is enabled (<em>default</em>), MinerGuard will ensure that the AMD driver is in compute mode.
@@ -244,7 +243,7 @@ If this check is enabled, MinerGuard will detect the different installed driver 
 </blockquote>
 <h3 id="external-tools">External Tools</h3>
 <p>In this section you will find the options to configure some external tools.</p>
-<p><img alt="External tool screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/external-tools-1.png" /></p>
+<p><img alt="External tool screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/external_tools.png" /></p>
 <p><strong>Use Overdriventool</strong>:
 whether to run Overdriventool before starting to mine. 
 Overdriventool is a software that enables P-states for AMD cards. 
@@ -262,7 +261,7 @@ However, if mining without P-States enabled is ok, you should not halt the miner
 </blockquote>
 <h3 id="cast-xmr">Cast-XMR</h3>
 <p>This section shows configuration options for the Cast-XMR miner.</p>
-<p><img alt="Cast-XMR screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/Cast-XMR-1.png" /></p>
+<p><img alt="Cast-XMR screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/cast_xmr.png" /></p>
 <p><strong>Additional command line</strong>:
 any specific command line option to pass to the miner. 
 Note that basic options such as pool-address, username, password are already automatically handled by MinerGuard itself.
@@ -305,7 +304,7 @@ Before configuring Slack, you should read the <strong>Slack and Chatbots section
 <p>The very first step is to register to Slack website. 
 To do so, visit https://slack.com/get-started and select <em>create a new workspace</em>.
 Complete the registration procedure (don't forget to verify your email account), and make sure to remeber both your workspace name and registration email address.</p>
-<p><img alt="Slack screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/slack.png" /></p>
+<p><img alt="Slack screenshot" src="https://minerguard.pro/wp-content/uploads/2018/07/slack-1.png" /></p>
 <p>Once you got access to the slack workpspace, get back to the Slack configuration tab and click on <em>Get-Token</em> button.</p>
 <p><img alt="Slack screenshot 1" src="https://minerguard.pro/wp-content/uploads/2018/07/slack2.png" /></p>
 <p>A new form will appear. 
