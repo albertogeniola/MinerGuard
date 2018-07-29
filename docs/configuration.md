@@ -14,7 +14,7 @@ So, let's have a look at each one.
 ### General
 This section contains the general configuration options that are valid for the miner-rig itself. 
 
-![General configuration screenshot](https://minerguard.pro/wp-content/uploads/2018/07/General-2.png)
+![General configuration screenshot](https://minerguard.pro/wp-content/uploads/2018/07/general.png)
 
 **Miner identifier**: 
 the name to assign to this miner. 
@@ -26,7 +26,7 @@ when enabled, MinerGuard will automatically start at Windows boot.
 Be advised: enabling this option requires you to set up an account with administrative rights that logs automatically on the system.
 The wizard procedure to do so will appear when you save the configuration.
 
-**Ensure windows update off**: 
+**Ensure Windows update off**: 
 when enabled, this option will make sure windows updates are switched off.
 This is particularly useful to make sure that the system does not update drivers on its own.
 Please note that this option will not prevent AMD/nVIDIA dirvers from automatically update.
@@ -60,7 +60,7 @@ To do so, just put _GPU_MAX_ALLOC_PERCENT_ in the first column and _100_ in the 
 ### Error Handling
 This section configures the automatic error-recovery policies that MinerGuard will apply in case of errors.
 
-![Error handling screenshot](https://minerguard.pro/wp-content/uploads/2018/07/Error-handling.png)
+![Error handling screenshot](https://minerguard.pro/wp-content/uploads/2018/07/error_handling.png)
 
 **Hashrate check interval**: 
 how frequently MinerGuard will check the hashrate of the miner and will react in case the hashrate is less than the threshold.
@@ -92,7 +92,7 @@ If this happens for more than 3 times in an hour, then the miner will _halt and 
 The VGA section deals about generic features that apply to any graphic card installed to the system.
 Some VGA settings specific to their model/brand are instead available on the next sections.
 
-![VGA Settings](https://minerguard.pro/wp-content/uploads/2018/07/VGA-Settings.png)
+![VGA Settings](https://minerguard.pro/wp-content/uploads/2018/07/vga_settings.png)
 
 **Auto reset VGAs**:
 whether to reset certain graphics card before mining start/restart. 
@@ -100,8 +100,7 @@ When this option is active, is applies only to graphic cards that match the Plug
 
 **PNP IDS to reset**:
 the device Plug-n-play IDs matching VGA cards to be reset before starting the mining software.
-MinerGuard will show all the PNP-Device ids for detected VGAs in the system on the main screen, bottom right corner. 
-However, you might retrieve the same info from _Windows Device Management_ dialogs, looking at the ID-Hardware propertu from the driver details.
+To add a card type to the list of cards to be automatically restarted, just double click on the corresponding VGA from the list below.
 
 >You probably don't need to use this feature, unless you are using some unstable driver.
 >For instance, people using BlockChain drivers with Vega devices, might really take advantage from this option.
@@ -110,7 +109,7 @@ However, you might retrieve the same info from _Windows Device Management_ dialo
 ### AMD Settings
 Here you find the configuration options specifically for AMD graphics adapters.
 
-![AMD Settings](https://minerguard.pro/wp-content/uploads/2018/07/AMD-Settings-1.png)
+![AMD Settings](https://minerguard.pro/wp-content/uploads/2018/07/vga_settings.png)
 
 **Auto enable compute mode**: 
 whether to ensure compute mode is switched on for all the AMD devices in the system.
@@ -142,7 +141,7 @@ list of whitelisted driver versions to be checked by the "Ensure Driver Version"
 ### External Tools
 In this section you will find the options to configure some external tools.
 
-![External tool screenshot](https://minerguard.pro/wp-content/uploads/2018/07/external-tools-1.png)
+![External tool screenshot](https://minerguard.pro/wp-content/uploads/2018/07/external_tools.png)
 
 **Use Overdriventool**:
 whether to run Overdriventool before starting to mine. 
@@ -165,7 +164,7 @@ However, if mining without P-States enabled is ok, you should not halt the miner
 ### Cast-XMR
 This section shows configuration options for the Cast-XMR miner.
 
-![Cast-XMR screenshot](https://minerguard.pro/wp-content/uploads/2018/07/Cast-XMR-1.png)
+![Cast-XMR screenshot](https://minerguard.pro/wp-content/uploads/2018/07/cast_xmr.png)
 
 **Additional command line**:
 any specific command line option to pass to the miner. 
@@ -223,7 +222,7 @@ The very first step is to register to Slack website.
 To do so, visit https://slack.com/get-started and select *create a new workspace*.
 Complete the registration procedure (don't forget to verify your email account), and make sure to remeber both your workspace name and registration email address.
 
-![Slack screenshot](https://minerguard.pro/wp-content/uploads/2018/07/slack.png)
+![Slack screenshot](https://minerguard.pro/wp-content/uploads/2018/07/slack-1.png)
 
 Once you got access to the slack workpspace, get back to the Slack configuration tab and click on _Get-Token_ button.
 
