@@ -110,12 +110,12 @@ So far, the following versions are supported:
     <tr>
         <td>Stak-XMR</td>
         <td>2.4.6</td>
-        <td>68870daf07a621747b8ca8ac602642b0</td>
+        <td>36a2f1d264cb4d96ce48010e2425d502</td>
     </tr>
     <tr>
         <td>Stak-XMR</td>
         <td>2.4.7</td>
-        <td>68870daf07a621747b8ca8ac602642b0</td>
+        <td>127637bd16da206ba745b2e616e37361</td>
     </tr>
 </table>
 
