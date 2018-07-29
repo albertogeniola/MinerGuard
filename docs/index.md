@@ -107,6 +107,16 @@ So far, the following versions are supported:
 		<td>2.4.5</td>
 		<td>68870daf07a621747b8ca8ac602642b0</td>
 	</tr>
+    <tr>
+        <td>Stak-XMR</td>
+        <td>2.4.6</td>
+        <td>68870daf07a621747b8ca8ac602642b0</td>
+    </tr>
+    <tr>
+        <td>Stak-XMR</td>
+        <td>2.4.7</td>
+        <td>68870daf07a621747b8ca8ac602642b0</td>
+    </tr>
 </table>
 
 Please note that future versions of MinerGuard will probably support more miners and more cryptocurrencies.
