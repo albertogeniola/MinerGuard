@@ -186,7 +186,7 @@ Useful for troubleshooting procedures in case the miner hangs and MinerGuard is 
 ### Stak-XMR
 This section shows configuration options for the Stak-XMR miner.
 
-![Stak-XMR screenhost](https://minerguard.pro/wp-content/uploads/2018/07/Stak-XMR.png)
+![Stak-XMR screenhost](https://minerguard.pro/wp-content/uploads/2018/07/stak_xmr.png)
 
 **Directory of XMR-Stak**:
 path to the directory containing XMR-Stak executable and dll.
